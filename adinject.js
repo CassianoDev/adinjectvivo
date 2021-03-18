@@ -2,10 +2,10 @@
 //Visite: http://e.vivo.com.br/ (não precisa ta logado na vivo nem usar a internet da vivo)
 //baixe a extensão CJS para Chrome (https://chrome.google.com/webstore/detail/custom-javascript-for-web/poakhlngfciodnhlhhgnaaelnpjljija), clique no botão 'raw' aqui do pastebin, copie e cole este código (certifique de marcar 'enable cjs for this host' na extensão CJS
 //Lembre-se de definir seu número abaixo:
-var vivonumero = 1100000000//seu numero com DDD
+var vivonumero = prompt("Qual é o número da sua linha?", 11000000000)//seu numero com DDD
 requestsError = 0;
 requestsOk = 0;
-alert("Aguarde um tempo... se quiser detalhes, clique com o lado direito do mouse e vá em inspecionar e na aba console.");
+alert("Aguarde um tempo... daqui a pouco lhe avisamos se deu certo...");
 refreshIntervalId = setInterval(async()=>{
     var details = {
         'msisdn': '55'+vivonumero,
